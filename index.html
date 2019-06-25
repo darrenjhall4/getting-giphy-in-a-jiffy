@@ -1,23 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Giphy HW</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
+
 <body>
-  <div id="gifButtons">
+    <div class="container">
+      <h1>Welcome to the Greatest Mediocre Gif App!</h1>
 
-  </div>
-  
+      <form id="formGroup">
+          <label>Select Gifs</label>
+          <input id="gifInput" type="text"></input>
+          <button id="addButton">Search</button>
+        </form>
 
-  <form id="gifForm">
-    <input id="gifInput">Select your GIF</input>
-    <button data-instrument="">Busca</button>
-  </form>
-  
+      <div class="sub-container">
+        <div id="preloadedButtons"></div>
+        <div id="gifDisplay"></div>
+      </div>
+
+    </div>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/giphy.js"></script>
 </body>
+
 </html>
