@@ -1,2 +1,2 @@
-# getting-giphy-in-a-jiffy
-Giphy app accessing the Giphy API
+# git-giftastic
+My app uses ajax calls to the Giphy API and returns gifs with the user's selected instrument.
