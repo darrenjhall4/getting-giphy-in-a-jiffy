@@ -1,0 +1,28 @@
+body {
+  background-image: url(../images/pb-background.jpg);
+  background-size: 150%;
+  color: white !important;
+}
+
+.jumbotron-fluid {
+  /* background-color: #0055A5 !important; */
+  background-image: url(../images/jif.png);
+  background-size: cover;
+}
+
+.card {
+  height: auto;
+  width: 360px !important;
+}
+
+img {
+  height: 200px !important;
+}
+
+#formGroup button {
+  background: #01A33C !important;
+  border-style: solid;
+  border-width: 1px;
+  border-color: white;
+  color: white;
+}

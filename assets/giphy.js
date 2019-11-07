@@ -49,12 +49,16 @@ $(document).ready(function() {
         }
         for (var i = 0; i<results.length; i++){
           var gifDiv = $("<div>");
-          gifDiv.addClass("gifDiv");
-          var gifRating = $("<h3>").text("Rating: " + results[i].rating);
+          gifDiv.addClass("card");//
+
+          // gifDiv.attr("width: 18rem");
+          var gifRating = $("<h5>").text("Rating: " + results[i].rating);
+          gifRating.addClass("card-title");//
           gifDiv.append(gifRating);
 
           var gifImage = $("<img>");
-          
+          gifImage.addClass("card-img-top");//
+          // gifImage.attr("width: 18rem");
           gifImage.attr("src", results[i].images.fixed_height_small_still.url);
           
           gifImage.attr("data-still", results[i].images.fixed_height_small_still.url);
@@ -63,7 +67,7 @@ $(document).ready(function() {
 
           gifImage.attr("data-state", "still");
           gifImage.addClass("image");
-          gifDiv.append(gifImage);
+          gifDiv.prepend(gifImage);
 
           $("#gifDisplay").prepend(gifDiv);
         }
