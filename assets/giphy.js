@@ -9,7 +9,7 @@ $(document).ready(function() {
     for (var i=0; i <instruments.length; i++){
       var gifButton = $("<button>");
       gifButton.addClass("preload")
-      gifButton.addClass("btn btn-success")
+      // gifButton.addClass("btn btn-success")
       gifButton.attr("data-name", instruments[i]);
       gifButton.text(instruments[i]);
       $("#preloadedButtons").append(gifButton);
@@ -49,16 +49,15 @@ $(document).ready(function() {
         }
         for (var i = 0; i<results.length; i++){
           var gifDiv = $("<div>");
-          gifDiv.addClass("card");//
-
+          gifDiv.addClass("card");
           // gifDiv.attr("width: 18rem");
-          var gifRating = $("<h5>").text("Rating: " + results[i].rating);
-          gifRating.addClass("card-title");//
+          var gifRating = $("<h5>").text("Rated " + results[i].rating);
+          // gifRating.addClass("card-title");
           gifDiv.append(gifRating);
 
           var gifImage = $("<img>");
           gifImage.addClass("card-img-top");//
-          // gifImage.attr("width: 18rem");
+          gifImage.attr("width: 18rem");
           gifImage.attr("src", results[i].images.fixed_height_small_still.url);
           
           gifImage.attr("data-still", results[i].images.fixed_height_small_still.url);
@@ -68,6 +67,7 @@ $(document).ready(function() {
           gifImage.attr("data-state", "still");
           gifImage.addClass("image");
           gifDiv.prepend(gifImage);
+          gifDiv.append(gifRating);
 
           $("#gifDisplay").prepend(gifDiv);
         }

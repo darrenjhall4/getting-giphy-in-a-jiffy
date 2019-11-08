@@ -8,32 +8,40 @@
   <title>Giphy HW</title>
   <link href="https://fonts.googleapis.com/css?family=Asset|Baloo+Bhaina&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./assets/styles/styles.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <div class="container">
+  <div class="container">
 
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-              <h1 class="display-4">giftastic!</h1>
-            </div>
-          </div>
-      
-
-      <form id="formGroup">
-          <label>Select Gifs</label>
-          <input id="gifInput" type="text"></input>
-          <button id="addButton">Search</button>
-        </form>
-
-      <div class="sub-container">
-          <h3>The Choosy Moms Chosen Buttons:</h3>
-        <div id="preloadedButtons"></div>
-        <div id="gifDisplay"></div>
+    <div class="jumbotron jumbotron-fluid">
+      <div class="container">
+        <h1 class="display-4">gif-<br>tastic</h1>
       </div>
-
     </div>
+
+
+
+    <form id="formGroup">
+      <label>Select Gifs</label>
+      <input id="gifInput" type="text"></input>
+      <button id="addButton">Search</button>
+      <p id="formP">-Search Giphy & disply your favorite instrument gifs! <br> -Add an instrument to the "Choosy Moms Chosen 
+        Gifs" section and click the button. <br>
+        -Click gifs to activate and enjoy!</p>
+    </form>
+
+
+    <div class="sub-container">
+      <div id="choosyButtonsDiv">
+        <h3>The Choosy Moms Chosen Gifs:</h3>
+        <div id="preloadedButtons"></div>
+      </div>
+      <div id="gifDisplay"></div>
+    </div>
+
+  </div>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="assets/giphy.js"></script>
